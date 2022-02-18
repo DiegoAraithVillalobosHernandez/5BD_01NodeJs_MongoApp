@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    {{>navbar}}
+    {{>navbar}}<!--son archivos hbs insertados-->
     <main class="container p-5">
-        {{{body}}}
+        {{{body}}} <!--Es el index.hbs por default-->
     </main>
-   
+    {{>footer}}
 
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

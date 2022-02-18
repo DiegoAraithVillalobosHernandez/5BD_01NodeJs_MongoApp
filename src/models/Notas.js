@@ -9,8 +9,9 @@ const NotaSchema= new Schema({
         type:String,
         required:true
     }
-},{
-    timestamps:true
+},{//nos va a registrar la fecha cuando insertemos y monitorea cuando modifiquemos
+    timestamps:true 
 });
 
+//Mongoose por defecto busca en la bd la coleccion dada aquí y si no esta, la crea
 module.exports= model('Nota',NotaSchema);
